@@ -1,4 +1,4 @@
-package com.sparta.hm.Factory;
+package com.sparta.hm.factory;
 
 import com.sparta.hm.exceptions.SortLoaderException;
 import com.sparta.hm.sorters.BubbleSorter;

@@ -1,6 +1,6 @@
 package com.sparta.hm.start;
 
-import com.sparta.hm.Factory.SortFactory;
+import com.sparta.hm.factory.SortFactory;
 import com.sparta.hm.display.DisplayManager;
 import com.sparta.hm.exceptions.SortLoaderException;
 import com.sparta.hm.sorters.Sorter;
