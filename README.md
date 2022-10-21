@@ -12,7 +12,7 @@ Enter the number of the sorter you wish to use:
 The user can select the sorting algorithm to use by inputting the relevant number in the console.
 <br><br>The program will then present the user with the following prompt:
 ```java
-PLease enter the size of the array you wish to sort (must be between 0 and 1000): 
+Please enter the size of the array you wish to sort (must be between 0 and 1000): 
 ```
 If the user passes a valid size, the program will run the sorting algorithm and output the results.
 <br>The program will output:
