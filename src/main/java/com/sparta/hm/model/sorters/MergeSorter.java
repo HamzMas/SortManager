@@ -1,11 +1,15 @@
-package com.sparta.hm.sorters;
+package com.sparta.hm.model.sorters;
 
-import java.util.Arrays;
+import java.util.logging.Logger;
 
 public class MergeSorter implements Sorter {
+    private static final Logger logger = Logger.getLogger("merge-sorter-logger");
+
     @Override
     public int[] sortArray(int[] arrayToSort) {
+        //CustomLoggerConfiguration.configureLogger(logger);
         if(arrayToSort != null) {
+            //logger.log(Level.INFO, "inputted array is: " + Arrays.toString(arrayToSort));
             int arrayLength = arrayToSort.length;
 
             if (arrayLength <= 1) {
@@ -29,6 +33,7 @@ public class MergeSorter implements Sorter {
 
             merge(arrayToSort, leftHalfArray, rightHalfArray);
 
+            //logger.log(Level.INFO, "the final sorted array is: " + Arrays.toString(arrayToSort));
             return arrayToSort;
         }
          return new int[0];

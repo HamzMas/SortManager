@@ -1,11 +1,20 @@
-package com.sparta.hm.sorters;
+package com.sparta.hm.model.sorters;
+
+import com.sparta.hm.model.logging.CustomLoggerConfiguration;
+
+import java.util.Arrays;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class BubbleSorter implements Sorter{
+    private static final Logger logger = Logger.getLogger("bubble-sorter-logger");
 
     @Override
     public int[] sortArray(int[] arrayToSort) {
+        CustomLoggerConfiguration.configureLogger(logger);
         if (arrayToSort != null) {
             //set boolean for while loop
+            logger.log(Level.INFO, "inputted array is: " + Arrays.toString(arrayToSort));
             boolean swappedNumbers = true;
             while (swappedNumbers) {
                 //set bool to false if no elements are sorted
@@ -32,6 +41,7 @@ public class BubbleSorter implements Sorter{
                     }
                 }
             }
+            logger.log(Level.INFO, "the final sorted array is: " + Arrays.toString(arrayToSort));
             return arrayToSort;
         }
         return new int[0];

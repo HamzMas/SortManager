@@ -1,9 +1,8 @@
-package com.sparta.hm.start;
+package com.sparta.hm.controller;
 
-import com.sparta.hm.factory.SortFactory;
-import com.sparta.hm.display.DisplayManager;
+import com.sparta.hm.view.DisplayManager;
 import com.sparta.hm.exceptions.SortLoaderException;
-import com.sparta.hm.sorters.Sorter;
+import com.sparta.hm.model.sorters.Sorter;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -17,8 +16,8 @@ public class SortLoader {
             Sorter sorter = SortFactory.getSorter(scanner.nextInt());
             System.out.println("PLease enter the size of the array you wish to sort (must be between 0 and 1000): ");
 
-            int arraySize = getArraySizeFromUser();
-            arraySize = validateArraySize(arraySize);
+            int inputSize = getArraySizeFromUser();
+            int arraySize = validateArraySize(inputSize);
 
             int[] unsortedArray = populateArray(arraySize);
 
@@ -43,13 +42,10 @@ public class SortLoader {
     public static int getArraySizeFromUser() {
         while(!scanner.hasNextInt()) {
             scanner.next();
-            System.out.println("Not a valid int");
+            System.out.println("Not a valid int! Please enter a number between 0 and 1000");
         }
         return scanner.nextInt();
     }
-
-
-
 
     private static int[] populateArray(int arraySize) {
         Random rng = new Random();

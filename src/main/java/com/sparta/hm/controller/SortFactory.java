@@ -1,9 +1,9 @@
-package com.sparta.hm.factory;
+package com.sparta.hm.controller;
 
 import com.sparta.hm.exceptions.SortLoaderException;
-import com.sparta.hm.sorters.BubbleSorter;
-import com.sparta.hm.sorters.MergeSorter;
-import com.sparta.hm.sorters.Sorter;
+import com.sparta.hm.model.sorters.BubbleSorter;
+import com.sparta.hm.model.sorters.MergeSorter;
+import com.sparta.hm.model.sorters.Sorter;
 
 public class SortFactory {
 

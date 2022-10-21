@@ -1,6 +1,6 @@
-package com.sparta.hm.display;
+package com.sparta.hm.view;
 
-import com.sparta.hm.sorters.Sorter;
+import com.sparta.hm.model.sorters.Sorter;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -19,13 +19,16 @@ public class DisplayManager {
 
     public static void printBeforeSorting(Sorter sorter, int[] arrayToSort) {
         System.out.println("Sorting the array using the " + sorter);
-        System.out.println("Inputted Array before sorting: " + Arrays.toString(arrayToSort));
+        System.out.println("Inputted Array before sorting:\n" + Arrays.toString(arrayToSort));
     }
 
 
     public static void printSortingResults(Sorter sorter, int[] arrayToSort) {
+        long start = System.nanoTime();
         int[] sortedArr = sorter.sortArray(arrayToSort);
-        System.out.println("Sorted Array: " + Arrays.toString(arrayToSort));
+        System.out.println("Sorted Array:\n" + Arrays.toString(arrayToSort));
+        long end = System.nanoTime();
+        System.out.println("Time taken: " + (end - start) + " nanoseconds");
     }
 
 
