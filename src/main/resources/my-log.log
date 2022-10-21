@@ -1,2 +1,0 @@
-2022-10-21 com.sparta.hm.model.sorters.BubbleSorter.sortArray() INFO inputted array is: [880, 544, 330, 940, 747, 368, 345, 885, 948, 264]
-2022-10-21 com.sparta.hm.model.sorters.BubbleSorter.sortArray() INFO the final sorted array is: [264, 330, 345, 368, 544, 747, 880, 885, 940, 948]
