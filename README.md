@@ -1,9 +1,9 @@
 # SortManager
 Sort Manager is a program that allows the user to select a sorting algorithm, and input the size of 
-the array they would like to sort (between 0 and 1000), which then runs the sorting algorithm and outputs the sorted array and time it took to sort. Currently supports Bubble and Merge Sort algorithms.
+the array they would like to sort (between 0 and 1000), which then runs the sorting algorithm and outputs the sorted array and time it took to sort. Currently, the program supports Bubble and Merge Sort algorithms.
 
 ## How It Works
-Firstly navigate to com.sparta.hm.view.App and the run program from this class.
+Firstly navigate to com.sparta.hm.view.App and then run program from this class.
 ```java
 Enter the number of the sorter you wish to use:
 1. Bubble Sorter
@@ -29,7 +29,7 @@ Sorted Array:
 Time taken: 55556700 nanoseconds
 ```
 ## Installation
-- Download the project as a zip file, extract to a zip file or clone the repository.
+- Download the project as a zip file, extract to a folder or clone the repository.
 - Open the project in IntelliJ and navigate to the App class `(src/main/java/com.sparta.hm.view.app)` and run the program from this class.
 - You can then use the console to input your options and interact with the program. 
 
